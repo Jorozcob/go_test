@@ -1,0 +1,13 @@
+ host = hax.h.filess.io
+
+ database = proyectoFinal_hunterhave
+
+ user = proyectoFinal_hunterhave
+
+ puerto = 3307
+
+ pass = 7216895b4df7ca78c826d67927557d89746506bf
+ pass = root
+
+ conexion formato = mysql://proyectoFinal_hunterhave:7216895b4df7ca78c826d67927557d89746506bf@hax.h.filess.io:3307/proyectoFinal_hunterhave
+  log comand = mysql -u proyectoFinal_hunterhave -P 3307 -p7216895b4df7ca78c826d67927557d89746506bf -h hax.h.filess.io proyectoFinal_hunterhave
