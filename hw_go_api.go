@@ -12,6 +12,7 @@ func main() {
 	router := gin.Default()
 	router.Use(CORSMiddleware())
 	router.GET("/", myGetFunction)
+	router.GET("/test", testMyFunction)
 
 	port := os.Getenv("PORT")
 	if port == "" {
@@ -47,6 +48,15 @@ func myGetFunction(c *gin.Context) {
 	simpleMessage := simpleMessage{
 		Hello:   "World!",
 		Message: "Subscribe to my channel!",
+	}
+
+	c.IndentedJSON(http.StatusOK, simpleMessage)
+}
+
+func testMyFunction(c *gin.Context) {
+	simpleMessage := simpleMessage{
+		Hello:   "World!",
+		Message: "Test works!",
 	}
 
 	c.IndentedJSON(http.StatusOK, simpleMessage)
